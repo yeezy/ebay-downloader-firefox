@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "eBay Photo Downloader",
+  "version": "1.0.0",
+  "description": "Click to download the current eBay listing's gallery photos with Unix timestamp filenames.",
+  "permissions": ["activeTab", "downloads"],
+  "background": {"scripts": ["background.js"]},
+  "browser_action": {"default_title": "Download eBay listing photos", "default_icon": "icon.svg"},
+  "icons": {"48": "icon.svg", "96": "icon.svg"},
+  "browser_specific_settings": {"gecko": {"id": "ebay-photo-downloader@local.example", "strict_min_version": "109.0"}}
+}
